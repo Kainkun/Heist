@@ -454,6 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 644036071}
   dial: {fileID: 352412020}
+  maxSpinSpeed: 90
 --- !u!54 &258284327
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2717,7 +2718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Name
-      value: PlayerCapsule
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Layer

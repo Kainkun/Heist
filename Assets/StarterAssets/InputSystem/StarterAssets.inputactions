@@ -235,6 +235,74 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Safe",
+            "id": "0f1f9fba-ce00-42bd-be89-4f55d6a2c738",
+            "actions": [
+                {
+                    "name": "Spin",
+                    "type": "Value",
+                    "id": "4ed7d82f-e9e7-4513-8c46-08182d057c66",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "9f2ad6a2-666d-42fe-984a-08ed84a96757",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "WASD",
+                    "id": "ea33b962-d208-4fb9-8a9c-d6c699990dc7",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Spin",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "3f49e42c-6283-4e12-a01d-c555b08c36f5",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Spin",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "1684adf2-d303-453d-81df-466d6746e30a",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Spin",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "0d3ff149-4e06-4edb-aa80-acddf23c1cd1",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

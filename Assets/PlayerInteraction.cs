@@ -38,10 +38,16 @@ public class PlayerInteraction : MonoBehaviour
                 }
             }
             else
-            {
+            { 
+                GameManager.SetActionMap("Player");
                 currentInteractable.StopInteract();
                 currentInteractable = null;
             }
         }
+    }
+    
+    public void OnSpin(InputValue value)
+    {
+        ((Safe)currentInteractable).Spin(value.Get<float>());
     }
 }
