@@ -17,7 +17,7 @@ public class Safe : Interactable
     [EasyButtons.Button]
     public void CameraFocus()
     {
-        cam.Priority = 100;
+        cam.Priority = 1000;
         GameManager.Instance.player.GetComponent<FirstPersonController>().enabled = false;
     }
 
