@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class HeadShake : MonoBehaviour
 {
-    private int headNodCount;
-    private int headShakeCount;
+    private bool inquiring;
     
     bool nextTargetUp = true;
     bool nextTargetRight = true;
@@ -15,12 +14,20 @@ public class HeadShake : MonoBehaviour
 
     private float currentRotationUp;
     private float currentRotationRight;
+    
+    private int headNodCount;
+    private int headShakeCount;
 
+    
+    
     private Quaternion previousRotation;
     private Vector3 angularVelocity;
 
     void Update()
     {
+        if (!inquiring)
+            return;
+        
         Quaternion deltaRotation = transform.rotation * Quaternion.Inverse(previousRotation);
         previousRotation = transform.rotation;
         deltaRotation.ToAngleAxis(out var angle, out var axis);
@@ -61,6 +68,7 @@ public class HeadShake : MonoBehaviour
             {
                 headShakeCount = 0;
                 headNodCount = 0;
+                inquiring = false;
                 ShakeComplete();
             }
         }
@@ -73,6 +81,7 @@ public class HeadShake : MonoBehaviour
             {
                 headShakeCount = 0;
                 headNodCount = 0;
+                inquiring = false;
                 ShakeComplete();
             }
         }
@@ -86,6 +95,7 @@ public class HeadShake : MonoBehaviour
             {
                 headNodCount = 0;
                 headShakeCount = 0;
+                inquiring = false;
                 NodComplete();
             }
         }
@@ -98,9 +108,16 @@ public class HeadShake : MonoBehaviour
             {
                 headNodCount = 0;
                 headShakeCount = 0;
+                inquiring = false;
                 NodComplete();
             }
         }
+    }
+
+    [EasyButtons.Button]
+    public void Inquire()
+    {
+        inquiring = true;
     }
 
     public void ShakeComplete()

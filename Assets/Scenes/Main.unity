@@ -5968,6 +5968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredRotation: 45
+  requiredCount: 7
 --- !u!1 &761553986
 GameObject:
   m_ObjectHideFlags: 0
