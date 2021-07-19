@@ -14,6 +14,9 @@ public class Safe : Interactable
     public float maxSpinSpeed = 360;
     private Renderer _renderer;
 
+    private float totalLeftRotation;
+    private bool dialBroke;
+
     [EasyButtons.Button]
     public void CameraFocus()
     {
@@ -30,6 +33,9 @@ public class Safe : Interactable
 
     public override void Interact()
     {
+        if(dialBroke)
+            return;
+        
         GameManager.SetActionMap("Safe");
         CameraFocus();
     }
@@ -51,6 +57,20 @@ public class Safe : Interactable
 
     private void Update()
     {
+        if(dialBroke)
+            return;
+        
         dial.RotateAround(_renderer.bounds.center, -transform.forward, currentSpin * maxSpinSpeed * Time.deltaTime);
+        if (currentSpin * maxSpinSpeed * Time.deltaTime < 0)
+        {
+            totalLeftRotation += currentSpin * maxSpinSpeed * Time.deltaTime;
+            if (totalLeftRotation < -360*5)
+            {
+                dialBroke = true;
+                dial.parent = null;
+                Rigidbody rb = dial.gameObject.AddComponent<Rigidbody>();
+                rb.AddRelativeTorque(new Vector3(0,180,0), ForceMode.VelocityChange);
+            }
+        }
     }
 }

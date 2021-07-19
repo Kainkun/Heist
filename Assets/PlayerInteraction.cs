@@ -15,6 +15,8 @@ public class PlayerInteraction : MonoBehaviour
 
     private Interactable currentInteractable;
 
+    public Transform handRoot;
+
     private void Start()
     {
         camTransform = GetComponent<FirstPersonController>().CinemachineCameraTarget.transform;

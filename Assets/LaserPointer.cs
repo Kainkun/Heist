@@ -25,13 +25,26 @@ public class LaserPointer : MonoBehaviour
                 var targetRot = Quaternion.LookRotation(hitFromLaser.point - transform.position);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * rotateSpeed);
                 lineRenderer.SetPosition(0,Vector3.up * hitFromLaser.distance);
+
+                Flammable flammable = hitFromLaser.collider.GetComponent<Flammable>();
+                if (flammable)
+                {
+                    flammable.Ignite(hitFromLaser.point);
+                }
             }
         }
         else
         {
+           
             var targetRot = Quaternion.LookRotation((camTransform.forward * 10000) - transform.position);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * rotateSpeed);
             lineRenderer.SetPosition(0,Vector3.up * 1000);
+            
+            RaycastHit hitFromLaser;
+            if (Physics.Raycast(transform.position, transform.forward, out hitFromLaser, Mathf.Infinity, layerMask))
+            {
+                lineRenderer.SetPosition(0,Vector3.up * hitFromLaser.distance);
+            }
         }
     }
 }
