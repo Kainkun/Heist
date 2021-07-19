@@ -7,6 +7,7 @@ public class Throwable : Interactable
 {
     private Transform handRoot;
     public float grabSpeed = 1;
+    public Vector3 throwVector = new Vector3(0, 3, 10);
     private bool thrown;
     public override void Interact()
     {
@@ -19,7 +20,7 @@ public class Throwable : Interactable
         transform.parent = null;
         GetComponent<Collider>().enabled = true;
         GetComponent<Rigidbody>().isKinematic = false;
-        GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0,3,10), ForceMode.VelocityChange);
+        GetComponent<Rigidbody>().AddRelativeForce(throwVector, ForceMode.VelocityChange);
         thrown = true;
     }
 

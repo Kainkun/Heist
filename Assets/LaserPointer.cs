@@ -17,10 +17,10 @@ public class LaserPointer : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(camTransform.position, camTransform.forward, out hit, Mathf.Infinity, layerMask))
+        if (Physics.Raycast(camTransform.position, camTransform.forward, out hit, Mathf.Infinity, layerMask, QueryTriggerInteraction.Ignore))
         {
             RaycastHit hitFromLaser;
-            if (Physics.Raycast(transform.position, hit.point - transform.position, out hitFromLaser, Mathf.Infinity, layerMask))
+            if (Physics.Raycast(transform.position, hit.point - transform.position, out hitFromLaser, Mathf.Infinity, layerMask, QueryTriggerInteraction.Ignore))
             {
                 var targetRot = Quaternion.LookRotation(hitFromLaser.point - transform.position);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * rotateSpeed);
@@ -41,7 +41,7 @@ public class LaserPointer : MonoBehaviour
             lineRenderer.SetPosition(0,Vector3.up * 1000);
             
             RaycastHit hitFromLaser;
-            if (Physics.Raycast(transform.position, transform.forward, out hitFromLaser, Mathf.Infinity, layerMask))
+            if (Physics.Raycast(transform.position, transform.forward, out hitFromLaser, Mathf.Infinity, layerMask, QueryTriggerInteraction.Ignore))
             {
                 lineRenderer.SetPosition(0,Vector3.up * hitFromLaser.distance);
             }
