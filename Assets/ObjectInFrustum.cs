@@ -15,7 +15,6 @@ public class ObjectInFrustum : MonoBehaviour
 
     void Update()
     {
-        print(IsObjectInFrustum());
     }
 
     public bool IsObjectInFrustum()
