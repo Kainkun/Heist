@@ -26,7 +26,7 @@ public class InteractableSlotPart : Throwable
         Physics.Raycast(camTransform.position, camTransform.forward, out hit);
         if(hit.transform)
             slot = hit.collider.GetComponent<InteractableSlot>();
-        if (hit.transform && slot && !slot.slotFilled)
+        if (hit.transform && slot && !slot.slotFilled && (!slot.requireCorrectObject || slot.requiredSlotType == slotType))
         {
             Vector3 throwDirection = (hit.point - transform.position).normalized;
             throwDirection = throwDirection * throwPower;

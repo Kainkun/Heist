@@ -15,6 +15,9 @@ public class KickdownDoor : Interactable
 
     public override void Interact()
     {
+        if(interacted)
+            return;
+        
         rb.isKinematic = false;
         rb.AddRelativeForce(new Vector3(0,0,30), ForceMode.VelocityChange);
         rb.AddRelativeTorque(new Vector3(90,0,0), ForceMode.VelocityChange);

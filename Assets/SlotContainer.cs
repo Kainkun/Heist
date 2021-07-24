@@ -7,6 +7,8 @@ public class SlotContainer : MonoBehaviour
 {
     List<InteractableSlot> slots = new List<InteractableSlot>();
 
+    public string dialogueOnSuccess;
+
     private void Start()
     {
         foreach (Transform child in transform)
@@ -31,6 +33,7 @@ public class SlotContainer : MonoBehaviour
             }
         }
         print("yay");
+        DialogueManager.DoDialogue(dialogueOnSuccess);
         return true;
     }
 }

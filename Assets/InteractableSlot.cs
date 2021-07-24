@@ -6,6 +6,8 @@ public class InteractableSlot : MonoBehaviour
 {
     [HideInInspector]
     public SlotContainer parentContainer;
+
+    public bool requireCorrectObject;
     public bool slotFilled;
     public bool correctObject;
     public string requiredSlotType;
