@@ -631,7 +631,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabSpeed: 5
-  throwVector: {x: 0, y: 3, z: 10}
+  throwHeight: 3
+  throwPower: 10
 --- !u!1 &178737421
 GameObject:
   m_ObjectHideFlags: 0
@@ -4606,7 +4607,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabSpeed: 5
-  throwVector: {x: 0, y: 3, z: 10}
+  throwHeight: 3
+  throwPower: 10
 --- !u!54 &608326046
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6222,7 +6224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabSpeed: 5
-  throwVector: {x: 0, y: 3, z: 10}
+  throwHeight: 3
+  throwPower: 10
 --- !u!54 &692539495
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10859,7 +10862,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabSpeed: 10
-  throwVector: {x: 0, y: 5, z: 10}
+  throwHeight: 3
+  throwPower: 20
 --- !u!1 &1109955440
 GameObject:
   m_ObjectHideFlags: 0
@@ -15436,7 +15440,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabSpeed: 5
-  throwVector: {x: 0, y: 3, z: 10}
+  throwHeight: 3
+  throwPower: 10
 --- !u!1 &1697070027
 GameObject:
   m_ObjectHideFlags: 0
@@ -17151,7 +17156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabSpeed: 5
-  throwVector: {x: 0, y: 3, z: 10}
+  throwHeight: 3
+  throwPower: 10
 --- !u!54 &1922799704
 Rigidbody:
   m_ObjectHideFlags: 0
