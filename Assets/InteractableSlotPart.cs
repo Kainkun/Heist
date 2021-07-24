@@ -15,7 +15,7 @@ public class InteractableSlotPart : Throwable
             parentSlot = null;
         }
         
-        thrown = false;
+        //thrown = false;
         StartCoroutine(base.Grab());
     }
     
@@ -33,7 +33,7 @@ public class InteractableSlotPart : Throwable
             throwDirection.y += throwHeight;
             GetComponent<Rigidbody>().AddForce(throwDirection, ForceMode.VelocityChange);
             
-            thrown = true;
+            //thrown = true;
             GetComponent<Collider>().enabled = true;
             transform.parent = hit.transform;
             transform.localPosition = Vector3.zero;
