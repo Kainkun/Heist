@@ -14,12 +14,13 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        player = GameObject.FindGameObjectWithTag("Player");
+        PlayerInput = player.GetComponent<PlayerInput>();
     }
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        PlayerInput = player.GetComponent<PlayerInput>();
+
     }
 
     public static void SetActionMap(string name)
