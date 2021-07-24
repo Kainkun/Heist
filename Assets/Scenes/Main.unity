@@ -11217,6 +11217,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1181617814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1181617815}
+  - component: {fileID: 1181617816}
+  m_Layer: 2
+  m_Name: BacktrackBlocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1181617815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181617814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: 1.5, z: -0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1770864178}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1181617816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181617814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 0.25}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1225192311
 GameObject:
   m_ObjectHideFlags: 3
@@ -11542,7 +11586,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320220608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.13, y: 1.18, z: 4.13}
+  m_LocalPosition: {x: 26.13, y: 1.18, z: 1.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16135,6 +16179,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1782937264}
+  - {fileID: 1181617815}
   m_Father: {fileID: 0}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16150,6 +16195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9611599bd38ec749aa819e92de3bfca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backtrackBlocker: {fileID: 1181617816}
 --- !u!65 &1770864180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16193,8 +16239,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be50ae68dcf18cd4d92f63f0a12025a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionDone: 0
   doorOpen: 0
-  speed: 1
+  speed: 0.5
   openAngle: 50
   closedAngle: 0
   animationCurve:

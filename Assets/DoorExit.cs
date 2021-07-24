@@ -6,6 +6,7 @@ using UnityEngine;
 public class DoorExit : MonoBehaviour
 {
     private Door door;
+    public Collider backtrackBlocker;
 
     private void Awake()
     {
@@ -14,11 +15,11 @@ public class DoorExit : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("yo");
         if (other.CompareTag("Player"))
         {
             door.doorOpen = false;
             door.interactionDone = true;
+            backtrackBlocker.enabled = true;
         }
     }
 }
