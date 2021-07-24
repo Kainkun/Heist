@@ -7,11 +7,11 @@ using UnityEngine;
 public class Throwable : Interactable
 {
     private Transform handRoot;
-    public float grabSpeed = 1;
+    public float grabSpeed = 5;
     public float throwHeight = 3;
     public float throwPower = 10;
-    private bool thrown;
-    private Transform camTransform;
+    protected bool thrown;
+    protected Transform camTransform;
 
     private void Start()
     {
@@ -45,7 +45,7 @@ public class Throwable : Interactable
         thrown = true;
     }
 
-    IEnumerator Grab()
+    protected IEnumerator Grab()
     {
         GetComponent<Rigidbody>().isKinematic = true;
         GetComponent<Collider>().enabled = false;
