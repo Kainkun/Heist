@@ -6,15 +6,10 @@ public class ObjectInFrustum : MonoBehaviour
 {
     private Renderer _renderer;
     private Camera _cam;
-    void Start()
+    protected virtual void Start()
     {
         _renderer = GetComponent<Renderer>();
         _cam = Camera.main;
-    }
-
-
-    void Update()
-    {
     }
 
     public bool IsObjectInFrustum()
