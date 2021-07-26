@@ -16,12 +16,18 @@ public class Throwable : Interactable
     private void Start()
     {
         camTransform = GameManager.Instance.player.GetComponent<FirstPersonController>().CinemachineCameraTarget.transform;
+        handRoot = GameManager.Instance.player.GetComponent<PlayerInteraction>().handRoot;
     }
 
     public override void Interact()
     {
         //thrown = false;
-        StartCoroutine(Grab());
+        //StartCoroutine(Grab());
+        GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<Collider>().enabled = false;
+        transform.parent = handRoot;
+        transform.localPosition = Vector3.zero;//for snapping grab
+        transform.localRotation = Quaternion.identity;//for snapping grab
     }
 
     public override void StopInteract()
@@ -51,7 +57,6 @@ public class Throwable : Interactable
         GetComponent<Collider>().enabled = false;
         // Vector3 startPos = transform.position;
         // Quaternion startRot = transform.rotation;
-        handRoot = GameManager.Instance.player.GetComponent<PlayerInteraction>().handRoot;
         //
         // float t = 0;
         // while (t <= 1)
@@ -61,10 +66,8 @@ public class Throwable : Interactable
         //     t += Time.deltaTime * grabSpeed;
         //     yield return null;
         // }
-        transform.position = handRoot.position;//for snapping grab
-        transform.rotation = Quaternion.identity;//for snapping grab
-        
         transform.parent = handRoot;
+
         yield return null;
     }
 }
