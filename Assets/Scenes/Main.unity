@@ -192,7 +192,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18678
+  m_Name: pb_Mesh19696
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -693,6 +693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251d18cfa26b50d4db0555ab93667f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 5
   throwHeight: 3
   throwPower: 10
@@ -826,6 +827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47dfc7909bc90e40a5c49ac80a6ced9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 5
   throwHeight: 2
   throwPower: 3
@@ -1850,6 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0130229ab156174f9141cefc4a479e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   cam: {fileID: 644036071}
   dial: {fileID: 352412020}
   maxSpinSpeed: 360
@@ -3780,7 +3783,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18700
+  m_Name: pb_Mesh19718
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4476,7 +4479,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19158
+  m_Name: pb_Mesh20180
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4769,7 +4772,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18562
+  m_Name: pb_Mesh19580
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4961,6 +4964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251d18cfa26b50d4db0555ab93667f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 5
   throwHeight: 3
   throwPower: 10
@@ -6578,6 +6582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251d18cfa26b50d4db0555ab93667f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 5
   throwHeight: 3
   throwPower: 10
@@ -8212,7 +8217,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19288
+  m_Name: pb_Mesh20308
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8825,6 +8830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47dfc7909bc90e40a5c49ac80a6ced9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 5
   throwHeight: 2
   throwPower: 3
@@ -8852,7 +8858,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19196
+  m_Name: pb_Mesh20218
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9155,7 +9161,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18846
+  m_Name: pb_Mesh19866
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10074,7 +10080,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18808
+  m_Name: pb_Mesh19826
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10826,6 +10832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bac3e163f808ed4db6bf3f89bc94eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
 --- !u!54 &981685982
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10848,7 +10855,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19342
+  m_Name: pb_Mesh20362
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11168,7 +11175,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19270
+  m_Name: pb_Mesh20290
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11332,7 +11339,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18902
+  m_Name: pb_Mesh19922
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12009,6 +12016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251d18cfa26b50d4db0555ab93667f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 10
   throwHeight: 3
   throwPower: 20
@@ -13053,7 +13061,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18574
+  m_Name: pb_Mesh19592
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13217,7 +13225,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18644
+  m_Name: pb_Mesh19662
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13686,7 +13694,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18924
+  m_Name: pb_Mesh19944
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14388,7 +14396,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18752
+  m_Name: pb_Mesh19772
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14552,7 +14560,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18516
+  m_Name: pb_Mesh19534
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14928,6 +14936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47dfc7909bc90e40a5c49ac80a6ced9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 5
   throwHeight: 2
   throwPower: 3
@@ -15197,7 +15206,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18722
+  m_Name: pb_Mesh19740
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15388,6 +15397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47dfc7909bc90e40a5c49ac80a6ced9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 5
   throwHeight: 2
   throwPower: 3
@@ -15823,6 +15833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47dfc7909bc90e40a5c49ac80a6ced9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 5
   throwHeight: 2
   throwPower: 3
@@ -17580,6 +17591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251d18cfa26b50d4db0555ab93667f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 5
   throwHeight: 3
   throwPower: 10
@@ -18447,6 +18459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be50ae68dcf18cd4d92f63f0a12025a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   interactionDone: 0
   doorOpen: 0
   speed: 0.5
@@ -18948,6 +18961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47dfc7909bc90e40a5c49ac80a6ced9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 5
   throwHeight: 2
   throwPower: 3
@@ -18990,6 +19004,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 439
   maxDistance: 5
+  currentInteractable: {fileID: 0}
   handRoot: {fileID: 1643348013}
 --- !u!1 &1888012744
 GameObject:
@@ -19348,6 +19363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8779f57f6faa96f44a619d65cd848e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   camTransform: {fileID: 1927956213}
   layerMask:
     serializedVersion: 2
@@ -19388,6 +19404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 251d18cfa26b50d4db0555ab93667f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputType: 0
   grabSpeed: 5
   throwHeight: 3
   throwPower: 10
@@ -20932,6 +20949,42 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228376, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228376, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_NotificationBehavior
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228376, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228376, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      value: 1efd1eed-b099-4093-a05b-00a51f2c979a
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228376, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      value: 4ed7d82f-e9e7-4513-8c46-08182d057c66
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228376, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: 9f2ad6a2-666d-42fe-984a-08ed84a96757
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228376, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      value: Player/Interact[/Mouse/leftButton]
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228376, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      value: Safe/Spin[/Keyboard/a,/Keyboard/d]
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228376, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: Safe/Interact[/Mouse/leftButton]
+      objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -21171,7 +21224,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18622
+  m_Name: pb_Mesh19640
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21774,7 +21827,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19030
+  m_Name: pb_Mesh20052
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

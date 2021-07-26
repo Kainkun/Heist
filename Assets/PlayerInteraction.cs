@@ -13,11 +13,10 @@ public class PlayerInteraction : MonoBehaviour
 
     public float maxDistance = 5;
 
-    private Interactable currentInteractable;
+    public Interactable currentInteractable;
 
     public Transform handRoot;
-    
-    
+
 
     private void Start()
     {
@@ -26,7 +25,9 @@ public class PlayerInteraction : MonoBehaviour
 
     public void OnInteract(InputValue value)
     {
-        if (value.isPressed)
+        
+        
+        if (value.Get<float>() == 1)
         {
             if (!currentInteractable)
             {
@@ -36,22 +37,35 @@ public class PlayerInteraction : MonoBehaviour
                     Interactable interactable = hit.transform.GetComponent<Interactable>();
                     if (interactable)
                     {
-                        interactable.Interact();
                         currentInteractable = interactable;
+                        if(currentInteractable.inputType == Interactable.InputType.Toggle)
+                            currentInteractable.Interact();
                     }
                 }
             }
-            else
-            { 
-                GameManager.SetActionMap("Player");
+            else if (currentInteractable.inputType == Interactable.InputType.Toggle)
+            {
                 currentInteractable.StopInteract();
                 currentInteractable = null;
             }
         }
+
+
+        // if (currentInteractable && currentInteractable.inputType == Interactable.InputType.Hold)
+        // {
+        //     if (value.Get<float>() == 1)
+        //     {
+        //         currentInteractable.Interact();
+        //     }
+        //     else if (value.Get<float>() == 0)
+        //     {
+        //         currentInteractable.StopInteract();
+        //     }
+        // }
     }
-    
+
     public void OnSpin(InputValue value)
     {
-        ((Safe)currentInteractable).Spin(value.Get<float>());
+        ((Safe) currentInteractable).Spin(value.Get<float>());
     }
 }

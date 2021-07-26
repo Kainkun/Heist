@@ -42,6 +42,7 @@ public class Safe : Interactable
 
     public override void StopInteract()
     {
+        GameManager.SetActionMap("Player");
         CameraReturn();
     }
 

@@ -43,7 +43,7 @@
                     "id": "1efd1eed-b099-4093-a05b-00a51f2c979a",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Press(behavior=2)"
                 }
             ],
             "bindings": [
@@ -254,7 +254,7 @@
                     "id": "9f2ad6a2-666d-42fe-984a-08ed84a96757",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Press(behavior=2)"
                 }
             ],
             "bindings": [

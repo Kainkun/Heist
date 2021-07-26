@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-
+        
     }
 
     public static void SetActionMap(string name)
