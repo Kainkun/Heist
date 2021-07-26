@@ -38,7 +38,7 @@ public class LaserPointer : Interactable
                 lineRenderer.SetPosition(0, Vector3.up * hitFromLaser.distance);
 
                 Flammable flammable = hitFromLaser.collider.GetComponent<Flammable>();
-                if (flammable)
+                if (flammable && lineRenderer.enabled)
                 {
                     flammable.Ignite(hitFromLaser.point);
                 }

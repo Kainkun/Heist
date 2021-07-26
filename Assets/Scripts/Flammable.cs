@@ -17,12 +17,12 @@ public class Flammable : MonoBehaviour
         {
             particleSystems.Add(Instantiate(firePs, ignitePoint - transform.forward, Quaternion.identity).GetComponent<ParticleSystem>());
             timer = 0.25f;
-        }
-
-        if (!ignited)
-        {
-            ignited = true;
-            StartCoroutine(Finish());
+            
+            if (!ignited)
+            {
+                ignited = true;
+                StartCoroutine(Finish());
+            }
         }
     }
 

@@ -51,17 +51,17 @@ public class PlayerInteraction : MonoBehaviour
         }
 
 
-        // if (currentInteractable && currentInteractable.inputType == Interactable.InputType.Hold)
-        // {
-        //     if (value.Get<float>() == 1)
-        //     {
-        //         currentInteractable.Interact();
-        //     }
-        //     else if (value.Get<float>() == 0)
-        //     {
-        //         currentInteractable.StopInteract();
-        //     }
-        // }
+        if (currentInteractable && currentInteractable.inputType == Interactable.InputType.Hold)
+        {
+            if (value.Get<float>() == 1)
+            {
+                currentInteractable.Interact();
+            }
+            else if (value.Get<float>() == 0)
+            {
+                currentInteractable.StopInteract();
+            }
+        }
     }
 
     public void OnSpin(InputValue value)
