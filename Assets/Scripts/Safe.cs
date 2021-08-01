@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
-using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -21,14 +20,16 @@ public class Safe : Interactable
     public void CameraFocus()
     {
         cam.Priority = 1000;
-        GameManager.Instance.player.GetComponent<FirstPersonController>().enabled = false;
+        //GameManager.Instance.player.GetComponent<FirstPersonController>().enabled = false;
+        GameManager.TogglePlayerInput(false);
     }
 
     [EasyButtons.Button]
     public void CameraReturn()
     {
         cam.Priority = 0;
-        GameManager.Instance.player.GetComponent<FirstPersonController>().enabled = true;
+        //GameManager.Instance.player.GetComponent<FirstPersonController>().enabled = true;
+        GameManager.TogglePlayerInput(true);
     }
 
     public override void Interact()

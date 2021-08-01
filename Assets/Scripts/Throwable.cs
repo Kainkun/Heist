@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using StarterAssets;
 using UnityEngine;
 
 public class Throwable : Interactable
@@ -15,8 +14,9 @@ public class Throwable : Interactable
 
     private void Start()
     {
-        camTransform = GameManager.Instance.player.GetComponent<FirstPersonController>().CinemachineCameraTarget.transform;
-        handRoot = GameManager.Instance.player.GetComponent<PlayerInteraction>().handRoot;
+        //camTransform = GameManager.Instance.player.GetComponent<FirstPersonController>().CinemachineCameraTarget.transform;
+        camTransform = GameManager.PlayerCamera;
+        handRoot = GameManager.PlayerHandRoot;
     }
 
     public override void Interact()

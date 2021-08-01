@@ -12,7 +12,7 @@ public class TimedObjectInFrustum : ObjectInFrustum
 
     protected override void Start()
     {
-        player = GameManager.Instance.player.transform;
+        player = GameManager.Player.transform;
         base.Start();
     }
 

@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -20,7 +19,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Start()
     {
-        camTransform = GetComponent<FirstPersonController>().CinemachineCameraTarget.transform;
+        camTransform = GameManager.PlayerCamera;
     }
 
     public void OnInteract(InputValue value)
