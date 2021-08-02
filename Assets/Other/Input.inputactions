@@ -1,5 +1,5 @@
 {
-    "name": "StarterAssets",
+    "name": "Input",
     "maps": [
         {
             "name": "Player",
@@ -46,12 +46,28 @@
                     "interactions": "Press(behavior=2)"
                 },
                 {
+                    "name": "Zoom",
+                    "type": "Button",
+                    "id": "44829ef6-4c50-4a45-b09e-4c488bd14871",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)"
+                },
+                {
                     "name": "FInventory",
                     "type": "Button",
                     "id": "25069829-b133-4e1c-bab7-60959e49816d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Crouch",
+                    "type": "Button",
+                    "id": "31270c33-bdb0-4762-8705-f6fdf93883ca",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)"
                 }
             ],
             "bindings": [
@@ -170,7 +186,7 @@
                     "id": "ed66cbff-2900-4a62-8896-696503cfcd31",
                     "path": "<Pointer>/delta",
                     "interactions": "",
-                    "processors": "InvertVector2(invertX=false),ScaleVector2(x=15,y=15)",
+                    "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "Look",
                     "isComposite": false,
@@ -250,6 +266,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "FInventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5b82e3b3-64c0-468f-927d-b06cea6b8b6c",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3a3687bd-8e4b-4c74-86a2-e4e34e7f0d15",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Crouch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

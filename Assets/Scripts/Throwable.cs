@@ -15,8 +15,8 @@ public class Throwable : Interactable
     private void Start()
     {
         //camTransform = GameManager.Instance.player.GetComponent<FirstPersonController>().CinemachineCameraTarget.transform;
-        camTransform = GameManager.PlayerCamera;
-        handRoot = GameManager.PlayerHandRoot;
+        camTransform = GameManager.PlayerCameraTransform;
+        handRoot = GameManager.Player.GetComponent<PlayerInteraction>().handRoot;
     }
 
     public override void Interact()

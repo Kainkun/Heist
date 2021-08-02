@@ -9,15 +9,17 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public static GameObject Player;
-    public static Transform PlayerHandRoot;
     public static PlayerInput PlayerInput;
-    public static Transform PlayerCamera;
+    public static CinemachineVirtualCamera PlayerCamera;
+    public static Transform PlayerCameraTransform;
 
     private void Awake()
     {
         Instance = this;
         Player = GameObject.FindGameObjectWithTag("Player");
         PlayerInput = Player.GetComponent<PlayerInput>();
+        PlayerCamera = Player.GetComponentInChildren<CinemachineVirtualCamera>();
+        PlayerCameraTransform = PlayerCamera.transform;
     }
 
     private void Start()

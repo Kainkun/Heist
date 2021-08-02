@@ -19,7 +19,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Start()
     {
-        camTransform = GameManager.PlayerCamera;
+        camTransform = GameManager.PlayerCameraTransform;
     }
 
     public void OnInteract(InputValue value)
